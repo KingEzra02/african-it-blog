@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-color: #edf0f1;*/
+}
+
+body {
+    background-color: #edf0f1;
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #010202;
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #5A827E;
+}
+
+.blow_header {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #84AE92;
+    justify-content: space-between;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.img-1 {
+    flex: 50.33%;
+    padding: 60px;
+}
+
+.img-3 {
+    flex: 50.33%;
+    padding: 60px;   
+}
+
+.news-letter {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+
+}
+nav{
+    justify-content: center;
+}
+
+.blow_header input[type=text]{
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.blow_header button {
+    float: left;
+}
+.logo {
+    cursor: pointer;
+}
+
+.nav_links a{
+    text-decoration: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.nav_links li a:hover {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #FAFFCA;
+}
+
+footer {
+    background-color: #5A827E;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links li:hover {
+    color:#FAFFCA;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.about-list {
+    list-style: none;
+    display: block;
+    line-height: 2em;
+    font-size: 15px;
+}
+
+.about-list li {
+    font-size: small;
+}
+.PS-list {
+    list-style: none;
+    display: block;
+    line-height: 2em;
+    font-size: 15px;  
+}
+
+.PS-list li {
+    font-size: small;
+}
+h3 {
+    text-decoration: underline;
+}
+
+
