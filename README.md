@@ -7,3 +7,5 @@
 
 ## Planned Blog content:
    - https://docs.google.com/document/d/1v7csNypcgbus0XciT90eQifZW6FF8Dn7fXnwYlyqW4w/edit?addon_store&tab=t.0
+     
+   - ![GitHub Socialify Card] https://socialify.git.ci/KingEzra02/african-it-blog/image?language=1&owner=1&name=1&stargazers=1&theme=Light
