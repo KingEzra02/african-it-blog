@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challengies faced by IT professionals in Africa</title>
+    <title>Challenges faced by IT professionals in Africa</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
      <header>
-        <nav>
             <ul class="nav_links">
                 <li><a href="">Service</a></li>
                 <li><a href="">Menu</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Cooler</a></li>
+                <li><a href="#os-comparison">OS Comparison</a></li>
             </ul>
-        </nav>
      </header>
 
     <div class="blow_header">
-        <input type="text" placeholder="search.."/>
-        <button type="submit"><i class="fa fa-search"></i></button>
-        <h1>Challengies faced by IT professionals in Africa</h1>
-        <button><i class="fa fa-facebook"></i></button>
-        <button><i class="fa fa-twitter"></i></button>
+        <input type="text"  placeholder="Search" width="45%"/>
+        <h1>Challenges faced by IT professionals in Africa</h1>
+        <div class="icons">
+            <i class="ri-facebook-circle-line"></i>
+            <i class="ri-twitter-x-line"></i>
+        </div>
      </div>
 
      <section class="first-section">
@@ -42,7 +44,7 @@
                 <img  src="./media/images/Digital-Africa.jpg" alt="digital-africa" style="width:100%">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et esse architecto inventore aliquid impedit magni asperiores excepturi doloremque illo, iure explicabo possimus repudiandae magnam maiores in ullam id vel!</p>
                 <div class="news-letter">
-                    <form id="myForm" action="/">
+                    <form id="myForm" action="./output.html" method="post">
                     <div class="container">
                         <h2>Subscribe to the weekly newsletter</h2>
                     </div>
@@ -80,6 +82,66 @@
         </div>
       
      </section>
+
+     <!-- New OS Comparison Section -->
+     <section id="os-comparison" class="os-comparison-section">
+        <div class="comparison-container">
+            <h2>Comparing Windows, macOS, and Linux</h2>
+            
+            <div class="comparison-topic">
+                <h3>KT1901: Files and Directories, Naming Conventions, and File Allocation Table (FAT)</h3>
+                
+                <div class="comparison-subtopic">
+                    <h4>Directory Structure</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> Uses a hierarchical structure with drives (C:\, D:\) and folders. Paths use backslashes (C:\Users\Name\Documents).</li>
+                        <li><strong>macOS:</strong> Unix-based structure with a single root directory (/). Paths use forward slashes (/Users/Name/Documents).</li>
+                        <li><strong>Linux:</strong> Similar to macOS with a root directory (/). Paths use forward slashes (/home/username/Documents).</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-subtopic">
+                    <h4>Naming Conventions</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> Not case-sensitive by default (FILE.txt = file.txt). Restricted characters: \ / : * ? " < > |</li>
+                        <li><strong>macOS:</strong> Case-insensitive by default but case-preserving. Fewer naming restrictions than Windows.</li>
+                        <li><strong>Linux:</strong> Case-sensitive (FILE.txt ≠ file.txt). Restricted characters: / and null character.</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-subtopic">
+                    <h4>File Systems</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> Primarily uses NTFS, with FAT32 for compatibility (USB drives). FAT is still used for removable media.</li>
+                        <li><strong>macOS:</strong> Uses APFS (Apple File System) or HFS+. Supports FAT for external drives.</li>
+                        <li><strong>Linux:</strong> Uses ext4 typically. Supports many file systems including FAT.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="comparison-topic">
+                <h3>KT1902: Executable File Extensions</h3>
+                
+                <div class="comparison-subtopic">
+                    <h4>Executable File Types</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> .exe (executable), .msi (installer), .bat (batch files), .ps1 (PowerShell scripts)</li>
+                        <li><strong>macOS:</strong> .app (application bundle), .command (shell scripts), no extension (Unix executables)</li>
+                        <li><strong>Linux:</strong> No standard extension (permissions determine executability), .sh (shell scripts), .bin (binary)</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-subtopic">
+                    <h4>Script Execution</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> Runs batch files (.bat) in Command Prompt and PowerShell scripts (.ps1) in PowerShell.</li>
+                        <li><strong>macOS:</strong> Runs shell scripts in Terminal (bash, zsh). Requires executable permission (chmod +x).</li>
+                        <li><strong>Linux:</strong> Similar to macOS. Scripts need executable permission. Various shells available (bash most common).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
      
      <footer>
         <div>
@@ -88,11 +150,11 @@
                 You can find us on <br><br>
                 cell phone: 0672775108 <br><br>
                 email address: dailyafrica@AfriTech.co.za <br><br>
-                <ul class="footer-links">
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-linkedin"></i></li>
-                </ul>   
+                <div class="footer-links">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>   
             </p>
         </div>
         <div>
